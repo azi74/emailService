@@ -58,3 +58,6 @@ debug/
 # Optional local development files
 tmp/
 temp/
+
+*.js
+*.js.map
