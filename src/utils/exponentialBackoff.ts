@@ -4,7 +4,7 @@ export async function withExponentialBackoff<T>(
   initialDelay = 1000
 ): Promise<T> {
   let attempt = 0;
-  let lastError: Error;
+  let lastError: Error | undefined;
 
   while (attempt < maxRetries) {
     try {
@@ -17,6 +17,9 @@ export async function withExponentialBackoff<T>(
         await new Promise(resolve => setTimeout(resolve, delay));
       }
     }
+  }
+  if (!lastError) {
+    throw new Error('Exponential backoff failed with no recorded error');
   }
 
   throw lastError;

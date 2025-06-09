@@ -1,4 +1,5 @@
-import { IEmailProvider, EmailOptions, EmailResult } from './EmailProvider';
+import { IEmailProvider } from './EmailProvider';
+import { EmailOptions, EmailResult } from './types';
 
 export class MockProvider02 implements IEmailProvider {
   name = 'MockProvider02';

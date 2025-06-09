@@ -23,4 +23,4 @@ export interface EmailStatus {
   error?: string;
 }
 
-export type ProviderName = 'MockProviderA' | 'MockProviderB';
+export type ProviderName = 'MockProvider01' | 'MockProvider02';
