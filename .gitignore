@@ -1,0 +1,60 @@
+# Node.js and npm
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# TypeScript and build artifacts
+dist/
+*.tsbuildinfo
+
+# IDE and editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing and coverage
+coverage/
+.jest/
+*.lcov
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Debug files
+debug/
+*.pid
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Optional ESLint cache
+.eslintcache
+
+# Optional local development files
+tmp/
+temp/
